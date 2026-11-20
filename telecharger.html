@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Télécharger la bêta de LockDesk pour Windows 11</title>
+  <meta name="description" content="Téléchargez la version bêta de LockDesk pour Windows 11 (x64 ou ARM64) : un zip avec un seul fichier, ou un installateur.">
+  <link rel="canonical" href="https://thomasbonnefoy.github.io/lockdesk.github.io/telecharger.html">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161b" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/config.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="" width="32" height="32">
+        <span>LockDesk</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="index.html#fonctionnalites">Fonctionnalités</a>
+        <a href="index.html#restauration">Sécurité</a>
+        <a href="aide.html">Aide</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="page-head container">
+      <h1>Télécharger LockDesk</h1>
+      <p>Version bêta, pour Windows 11. Aucun compte à créer.</p>
+    </div>
+
+    <div class="container">
+      <div class="download-card">
+        <h2 class="visually-hidden">Les fichiers</h2>
+        <ul class="download-list">
+          <li>
+            <a class="button button-primary button-large is-disabled" data-download-file="setup" href="#" aria-disabled="true">Installateur<span class="visually-hidden"> (x64 et ARM64)</span></a>
+            <p>Un seul installateur pour tous les PC Windows 11. Il demande les droits administrateur (voir plus bas).</p>
+          </li>
+          <li>
+            <a class="button button-secondary button-large is-disabled" data-download-file="zip-x64" href="#" aria-disabled="true">Zip pour Intel / AMD (x64)</a>
+            <p>Version portable : un seul fichier, aucun droit administrateur.</p>
+          </li>
+          <li>
+            <a class="button button-secondary button-large is-disabled" data-download-file="zip-arm64" href="#" aria-disabled="true">Zip pour processeur ARM (ARM64)</a>
+            <p>Idem, pour les PC Windows 11 à processeur ARM.</p>
+          </li>
+        </ul>
+        <p class="fine-print" data-when="no-download">Les fichiers arrivent bientôt.</p>
+        <ul class="download-meta">
+          <li data-download-detail="version" hidden>Version <span data-download="version"></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container section-tight">
+      <div class="prose">
+        <h2>Installer</h2>
+        <h3>Avec l'installateur</h3>
+        <ol>
+          <li>Lancez <code>LockDesk-Setup-vX.Y.Z.exe</code> et acceptez la demande de droits administrateur.</li>
+          <li>Suivez l'assistant. LockDesk apparaît dans le menu Démarrer.</li>
+        </ol>
+        <p>L'installateur ajoute aussi, pour tous les utilisateurs du PC, un petit certificat créé sur votre PC. Il sert uniquement à afficher la page « Site bloqué » quand vous ouvrez un site sécurisé (https) que vous avez bloqué. Sans lui, le navigateur affiche sa propre page d'erreur, et tout le reste fonctionne pareil. La désinstallation le retire. Si vous ne voulez pas de ce certificat, prenez le zip.</p>
+
+        <h3>Avec le zip</h3>
+        <ol>
+          <li>Téléchargez le zip qui correspond à votre processeur, puis décompressez-le (clic droit, <strong>Extraire tout</strong>).</li>
+          <li>Il contient un seul fichier, <code>LockDesk.exe</code>. Lancez-le : rien à installer, aucun droit administrateur, tout ce dont il a besoin est inclus.</li>
+        </ol>
+
+        <h2>Premiers pas</h2>
+        <ol>
+          <li>Page <strong>Applications</strong> : ajoutez les programmes à mettre de côté pendant le mode. Page <strong>Sites web</strong> : les sites à bloquer.</li>
+          <li>Page <strong>Fond d'écran</strong> : choisissez une image, ou gardez le fond uni.</li>
+          <li>Page <strong>Mode</strong> : cliquez sur <strong>Activer le mode concentration</strong>, ou appuyez sur <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>. Le même bouton, ou le même raccourci, arrête le mode.</li>
+        </ol>
+
+        <h2>« Windows a protégé votre ordinateur »</h2>
+        <p>Au premier lancement, Windows peut afficher cet avertissement (SmartScreen) : l'application n'est pas encore signée numériquement, et il se méfie des programmes qu'il voit encore peu souvent. Cliquez sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>.</p>
+
+        <h2>Configuration requise</h2>
+        <ul>
+          <li>Windows 11, avec un processeur Intel ou AMD (x64) ou ARM (ARM64). Windows 10 n'est pas pris en charge.</li>
+          <li>Aucune connexion à Internet n'est nécessaire.</li>
+        </ul>
+
+        <h2>Désinstaller</h2>
+        <p>Si vous avez coché « Lancer au démarrage de Windows », décochez-le d'abord (page <strong>Options</strong>), puis quittez l'application (menu de son icône près de l'horloge, <strong>Quitter</strong>).</p>
+        <ul>
+          <li><strong>Installateur</strong> : Paramètres de Windows, Applications, LockDesk, Désinstaller.</li>
+          <li><strong>Zip</strong> : supprimez <code>LockDesk.exe</code>.</li>
+        </ul>
+        <p>Pour effacer aussi vos réglages et vos statistiques, supprimez le dossier <code>%LOCALAPPDATA%\ConcentrationWindows</code>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="" width="32" height="32">
+          <span>LockDesk</span>
+        </a>
+        <p>Un clic pour se concentrer sous Windows. Tout revient exactement comme avant ensuite.</p>
+      </div>
+      <nav aria-label="Produit">
+        <h2>Produit</h2>
+        <ul>
+          <li><a href="index.html#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="telecharger.html" aria-current="page">Télécharger</a></li>
+          <li><a href="aide.html">Aide et contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Informations légales">
+        <h2>Informations légales</h2>
+        <ul>
+          <li><a href="legal/mentions-legales.html">Mentions légales</a></li>
+          <li><a href="legal/confidentialite.html">Confidentialité</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-fill="year">2026</span> <span data-fill="publisher">LockDesk</span>. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

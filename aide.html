@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aide et questions fréquentes : LockDesk</title>
+  <meta name="description" content="Réponses aux questions sur la bêta de LockDesk : restauration du bureau, applications, blocage des sites, avertissement de Windows, et comment me contacter.">
+  <link rel="canonical" href="https://thomasbonnefoy.github.io/lockdesk.github.io/aide.html">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161b" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/config.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="" width="32" height="32">
+        <span>LockDesk</span>
+      </a>
+      <a class="button button-primary button-small header-cta" href="telecharger.html">Télécharger la bêta</a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="index.html#fonctionnalites">Fonctionnalités</a>
+        <a href="index.html#restauration">Sécurité</a>
+        <a href="aide.html" aria-current="page">Aide</a>
+        <a class="button button-primary button-small" href="telecharger.html">Télécharger la bêta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="page-head container">
+      <h1>Aide</h1>
+      <p>Les réponses aux questions les plus fréquentes. Vous ne trouvez pas la vôtre ? Écrivez-moi, je réponds en français.</p>
+    </div>
+
+    <div class="container">
+      <h2 class="visually-hidden">Questions fréquentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Faut-il créer un compte ?</summary>
+          <div class="answer"><p>Non. L'application n'a besoin d'aucun compte et ne se connecte à Internet pour rien. Vos modes, vos réglages et vos statistiques restent sur votre PC.</p></div>
+        </details>
+        <details>
+          <summary>Mon fond d'écran et mes fenêtres reviennent-ils vraiment comme avant ?</summary>
+          <div class="answer"><p>Oui. Avant le moindre changement, l'application enregistre l'état d'origine de votre PC. Elle le remet en place à la fin du mode, avant l'arrêt de Windows si vous éteignez pendant un mode, et au démarrage suivant après une coupure de courant ou un plantage.</p></div>
+        </details>
+        <details>
+          <summary>Est-ce que les applications fermées perdent mon travail ?</summary>
+          <div class="answer"><p>Non. Une application de votre liste est soit réduite, soit fermée poliment, comme si vous cliquiez sur sa croix : elle peut vous proposer d'enregistrer. Rien n'est jamais fermé de force.</p></div>
+        </details>
+        <details>
+          <summary>Le blocage des sites marche-t-il dans tous les navigateurs ?</summary>
+          <div class="answer"><p>Il marche dans les navigateurs qui suivent les réglages réseau de Windows, sans extension. Il a été vérifié avec Chrome et Opera GX ; Firefox et Edge n'ont pas encore été essayés. Si un proxy est déjà configuré sur votre PC (en entreprise, à l'école, avec un VPN), l'application n'y touche pas et vous le signale : le blocage ne fait alors rien.</p></div>
+        </details>
+        <details>
+          <summary>Un site bloqué affiche une erreur du navigateur, pas « Site bloqué »</summary>
+          <div class="answer"><p>Sur un site sécurisé (https, c'est presque tous), le navigateur affiche sa propre page d'erreur. La page « Site bloqué » de LockDesk ne s'affiche que si vous avez installé l'application avec l'installateur, qui ajoute pour cela un certificat local. Le site reste bloqué dans les deux cas.</p></div>
+        </details>
+        <details>
+          <summary>Faut-il des droits administrateur ?</summary>
+          <div class="answer"><p>Pas pour le zip : l'application fonctionne avec un compte Windows ordinaire. L'installateur, lui, demande les droits administrateur pour s'installer dans « Program Files » et pour ajouter le certificat local décrit ci-dessus.</p></div>
+        </details>
+        <details>
+          <summary>Quelles versions de Windows sont prises en charge ?</summary>
+          <div class="answer"><p>Windows 11 seulement, avec un processeur Intel ou AMD (x64) ou ARM (ARM64). Windows 10 n'est pas pris en charge. La version ARM64 n'a été essayée que dans une machine virtuelle pour l'instant.</p></div>
+        </details>
+        <details>
+          <summary>L'application lit-elle ce que je fais ?</summary>
+          <div class="answer"><p>Non. Elle regarde seulement quelles fenêtres sont ouvertes, pour mettre de côté celles de votre liste. Rien n'est envoyé : elle n'a aucune connexion à Internet (voir la <a href="legal/confidentialite.html">politique de confidentialité</a>).</p></div>
+        </details>
+        <details>
+          <summary>Windows affiche « Windows a protégé votre ordinateur »</summary>
+          <div class="answer"><p>C'est l'avertissement SmartScreen : l'application n'est pas encore signée numériquement et Windows se méfie des programmes qu'il voit encore peu souvent. Cliquez sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>.</p></div>
+        </details>
+        <details>
+          <summary>Quelque chose ne s'est pas passé comme prévu : que faire ?</summary>
+          <div class="answer"><p>C'est une version bêta, vos retours comptent. Écrivez-moi (adresse plus bas) en disant la version de LockDesk, ce que vous faisiez et ce qui s'est passé. Si votre bureau n'est pas revenu comme avant, le fichier <code>session-end.log</code> du dossier <code>%LOCALAPPDATA%\ConcentrationWindows</code> aide beaucoup : joignez-le.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <section class="container section-tight" aria-labelledby="titre-contact">
+      <div class="panel">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span>
+        <h2 id="titre-contact">M'écrire</h2>
+        <p>Une question, un problème, une idée ? Écrivez à <a class="todo" data-fill="support-email" href="#">l'adresse de contact (à compléter)</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="" width="32" height="32">
+          <span>LockDesk</span>
+        </a>
+        <p>Un clic pour se concentrer sous Windows. Tout revient exactement comme avant ensuite.</p>
+      </div>
+      <nav aria-label="Produit">
+        <h2>Produit</h2>
+        <ul>
+          <li><a href="index.html#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="telecharger.html">Télécharger</a></li>
+          <li><a href="aide.html" aria-current="page">Aide et contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Informations légales">
+        <h2>Informations légales</h2>
+        <ul>
+          <li><a href="legal/mentions-legales.html">Mentions légales</a></li>
+          <li><a href="legal/confidentialite.html">Confidentialité</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-fill="year">2026</span> <span data-fill="publisher">LockDesk</span>. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
