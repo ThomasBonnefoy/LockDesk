@@ -980,6 +980,11 @@ kbd {
   background: var(--surface);
 }
 
+/* A note that ends its block (the download warning) keeps a gap before what follows. */
+.prose .note:last-child {
+  margin-bottom: 32px;
+}
+
 .prose table {
   width: 100%;
   border-collapse: collapse;
