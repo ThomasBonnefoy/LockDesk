@@ -5,13 +5,13 @@ window.SITE = {
   publisher: "Thomas Bonnefoy",
 
   // The address that answers users. Empty = the pages show "(à compléter)".
-  supportEmail: "",
+  supportEmail: "thomas.bonnefoy14@gmail.com",
 
   // The files of the current release. Both are needed: the links are
   //   <baseUrl>/LockDesk-v<version>-win-x64.zip, <baseUrl>/LockDesk-v<version>-win-arm64.zip, <baseUrl>/LockDesk-Setup-v<version>.exe
   // Example: baseUrl "https://github.com/<owner>/<repo>/releases/download/v1.8.0", version "1.8.0".
   download: {
-    baseUrl: "",
-    version: "",
+    baseUrl: "https://github.com/ThomasBonnefoy/lockdesk.github.io/releases/download/v1.8.0",
+    version: "1.8.0",
   },
 };
